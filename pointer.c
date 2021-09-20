@@ -2,13 +2,33 @@
 
 
 int main(int argc, char *argv[]){
-   char value = 'D';
-   char *ptr;
+   int values[]={5,6,8,7,9};
+   int index;
+   int *ptr;
+   ptr=values;
 
-   ptr=&value;
+   char str[]="Hello World";
+   char *cptr;
+   cptr=str;
 
-   printf("[%x]value %c\n",&value,value);
-   printf("[%x]ptr %x --> %c\n",&ptr,ptr,*ptr);
+   for(index=0;index<5;index++){
+      printf("values: %d ",*(values+index));
+   }
+   printf("\n");
+
+   for(index=0;index<5;index++){
+      printf("ptr: %d ",*ptr);
+      ptr++;
+   }
+   printf("\n");
+  
+   while(*cptr!='\0'){
+      printf("%c",*cptr);
+      cptr++;
+   }
+   printf("\n");
+
+
 
    return 0;
 }
