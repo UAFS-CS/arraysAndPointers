@@ -7,3 +7,4 @@ Sample Code from class on Sep 20 covering:
 * pointers and pointer notation
 * base+offset addressing and pointer arithmetic
 * structs
+* dynamic memory allocation with malloc()
